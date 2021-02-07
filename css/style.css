@@ -22,7 +22,6 @@ ul{
     background-color: lightgray;
 }
 .card{
-    height: 350px;
     background: none;
     margin-bottom: 0px;
 }
@@ -31,7 +30,9 @@ ul{
     font-size: 25px;
     color: #363958;
 }
-
+#MealType{
+    margin: 0 auto;
+}
 
 #DisplayInformation{
     width: 480px;
