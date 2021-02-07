@@ -56,22 +56,39 @@ function displayInformation(meals){
     const Meal=meals.meals[0];
     document.getElementById('DisplayInformation').style.display='block';
     const HtmlTempet=`
-    <div class="card mb-5 " style="height: 500px;">
+    <div class="card mb-5 " style="height: 520px;">
     <img src="${Meal.strMealThumb}" class="card-img-top" alt="...">
     <div class="card-body " >
       <h3 class="card-title text-center">${Meal.strMeal}</h3>
       <h4>Ingredients</h4>
-     <ul>
-     <li><i class="fas fa-check-circle"></i> ${Meal.strIngredient2}</li>
-     <li><i class="fas fa-check-circle"></i> ${Meal.strIngredient3}</li>
-     <li><i class="fas fa-check-circle"></i> ${Meal.strIngredient4}</li>
-     <li><i class="fas fa-check-circle"></i> ${Meal.strIngredient5}</li>
-     <li><i class="fas fa-check-circle"></i> ${Meal.strIngredient6}</li>
-     <li><i class="fas fa-check-circle"></i> ${Meal.strIngredient7}</li>
-     <li><i class="fas fa-check-circle"></i> ${Meal.strIngredient8}</li>
-     </ul>
+      <ul id='ulid'>
+      </ul>
   </div>`
   document.getElementById('DisplayInformation').innerHTML=HtmlTempet;
+  GetIngredient(Meal);
+}
+
+function GetIngredient(Meal)
+{
+    let ul=document.getElementById('ulid');
+    let li='';
+    const Ingredient=[
+        (`${Meal.strMeasure1} ${Meal.strIngredient1}`),
+        (`${Meal.strMeasure2} ${Meal.strIngredient2}`),
+        (`${Meal.strMeasure3} ${Meal.strIngredient3}`),
+        (`${Meal.strMeasure4} ${Meal.strIngredient4}`),
+        (`${Meal.strMeasure5} ${Meal.strIngredient5}`),
+        (`${Meal.strMeasure6} ${Meal.strIngredient6}`),
+        (`${Meal.strMeasure7} ${Meal.strIngredient7}`),
+        (`${Meal.strMeasure8} ${Meal.strIngredient8}`),
+   ] 
+   Ingredient.map(data=>{
+       if(data!=' ')
+       {
+        li=li+`<li><i class="fas fa-check-circle"></i> ${data}</li>`
+       }
+   })
+   ul.innerHTML=li;
 }
 
                     //Get Id
