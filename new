@@ -10,3 +10,10 @@
             </div>
         </div>
         </div>`
+
+           //   <h6></h6>
+    //   <h6>${Meal.strIngredient2}</h6>
+    //   <h6>${Meal.strIngredient3}</h6>
+    //   <h6>${Meal.strIngredient4}</h6>
+    //   <h6>${Meal.strIngredient5}</h6>
+    //   <h6>${Meal.strIngredient6}</h6>
