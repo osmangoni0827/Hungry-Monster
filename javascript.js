@@ -3,9 +3,7 @@ const scerch=document.getElementById('scerch');
 const button=document.getElementById('sbutton');
 button.addEventListener('click',function(){
     SearchMealAndShow(scerch.value);
-
 })
-
 
 
 SearchMealAndShow=(name)=>{
@@ -13,6 +11,8 @@ SearchMealAndShow=(name)=>{
     .then(res=>res.json())
     .then(meals=>ShowMeal(meals));
 }
+
+                //Show Similer Meal Function
 ShowMeal=meals=>{
     const NotFoundNode=GetId('DisplayInformation');
     let parentNode='';
@@ -53,27 +53,28 @@ function DisplayIntigated(mealname)
 
                 //Display Any One Meal Information
 function displayInformation(meals){
-    
-    document.getElementById('DisplayInformation').style.display='block';
     const Meal=meals.meals[0];
+    document.getElementById('DisplayInformation').style.display='block';
     const HtmlTempet=`
     <div class="card" style="height: 490px;">
     <img src="${Meal.strMealThumb}" class="card-img-top" alt="...">
     <div class="card-body" >
       <h3 class="card-title text-center">${Meal.strMeal}</h3>
       <h4>Ingredients</h4>
-      <h6>${Meal.strIngredient1}</h6>
-      <h6>${Meal.strIngredient2}</h6>
-      <h6>${Meal.strIngredient3}</h6>
-      <h6>${Meal.strIngredient4}</h6>
-      <h6>${Meal.strIngredient5}</h6>
-      <h6>${Meal.strIngredient6}</h6>
+     <ul>
+     <li><i class="fas fa-check-circle"></i> ${Meal.strIngredient2}</li>
+     <li><i class="fas fa-check-circle"></i> ${Meal.strIngredient3}</li>
+     <li><i class="fas fa-check-circle"></i> ${Meal.strIngredient4}</li>
+     <li><i class="fas fa-check-circle"></i> ${Meal.strIngredient5}</li>
+     <li><i class="fas fa-check-circle"></i> ${Meal.strIngredient6}</li>
+     <li><i class="fas fa-check-circle"></i> ${Meal.strIngredient7}</li>
+     <li><i class="fas fa-check-circle"></i> ${Meal.strIngredient8}</li>
+     </ul>
   </div>`
   document.getElementById('DisplayInformation').innerHTML=HtmlTempet;
-  
 }
 
-
+                    //Get Id
 function GetId(id)
 {
     return document.getElementById(id);
