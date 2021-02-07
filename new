@@ -1,0 +1,12 @@
+
+
+
+    `
+        <div class="col-lg-3 col-md-4 col-sm-12">
+        <div onclick="DisplayIntigated('${meal.strMeal}')" class="card cards mt-4">
+            <img src="${meal.strMealThumb}" class="card-img-top" alt="${meal.strMeal} picture">
+            <div class="card-body backupbody">
+                <h4 class='text-center'>${meal.strMeal}</h4>
+            </div>
+        </div>
+        </div>`

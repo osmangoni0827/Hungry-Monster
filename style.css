@@ -1,0 +1,82 @@
+
+/* main{
+    background-color:burlywood;
+} */
+.MealType img{
+
+    height: 200px;
+    border-radius: 10px;
+}
+.cardbackcup{
+    border: none;
+    background: n;
+    border-radius: 10px;
+}
+.backupbody{
+    background-color: lightgray;
+}
+
+/* .cards{
+    width: 18rem;
+    border:none;
+    height: 350px;
+    background: none;
+    margin-bottom: 0px;
+} */
+
+.cards{
+    padding: 5px;
+    margin:10px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px #F8F8F8;
+}
+.cards h3{
+    font-size: 25px;
+    color: #363958;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#DisplayInformation{
+    width: 480px;
+    padding: 20px;
+    margin: 0px auto;
+    height: 450px;
+    display: none;
+    margin-bottom: 50px;
+}
+#DisplayInformation img{
+    height: 220px;
+}
+#DisplayInformation h1{
+    color: red;
+}
+#card-body{
+    height: 500px;
+}
+h3,h4{
+    font-weight: 800;
+}
