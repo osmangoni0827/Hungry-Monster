@@ -56,9 +56,9 @@ function displayInformation(meals){
     const Meal=meals.meals[0];
     document.getElementById('DisplayInformation').style.display='block';
     const HtmlTempet=`
-    <div class="card" style="height: 500px;">
+    <div class="card mb-5 " style="height: 500px;">
     <img src="${Meal.strMealThumb}" class="card-img-top" alt="...">
-    <div class="card-body" >
+    <div class="card-body " >
       <h3 class="card-title text-center">${Meal.strMeal}</h3>
       <h4>Ingredients</h4>
      <ul>

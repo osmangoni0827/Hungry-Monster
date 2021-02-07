@@ -1,5 +1,13 @@
-
-
+h3,h4{
+    font-weight: 800;
+}
+ul li{
+    list-style: none;
+}
+ul{
+    padding-left: 0px;
+    margin-left: 0px;
+}
 .MealType img{
 
     height: 200px;
@@ -12,7 +20,6 @@
 }
 .backupbody{
     background-color: lightgray;
-    height: 100px;
 }
 .card{
     height: 350px;
@@ -24,43 +31,13 @@
     font-size: 25px;
     color: #363958;
 }
-ul li{
-    list-style: none;
-}
-ul{
-    padding-left: 0px;
-    margin-left: 0px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #DisplayInformation{
     width: 480px;
     padding: 20px;
     margin: 0px auto;
-    height: 450px;
+    height: 470px;
     display: none;
     margin-bottom: 50px;
 }
@@ -72,7 +49,4 @@ ul{
 }
 #card-body{
     height: 500px;
-}
-h3,h4{
-    font-weight: 800;
 }
