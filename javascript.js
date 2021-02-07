@@ -83,12 +83,15 @@ function GetIngredient(Meal)
         (`${Meal.strMeasure8} ${Meal.strIngredient8}`),
    ] 
    Ingredient.map(data=>{
-       if(data!=' ')
+       if(data!="  " && data!=" ")
        {
         li=li+`<li><i class="fas fa-check-circle"></i> ${data}</li>`
+        console.log('if'+data);
        }
+       
    })
    ul.innerHTML=li;
+   console.log('new'+Ingredient[6]);
 }
 
                     //Get Id
