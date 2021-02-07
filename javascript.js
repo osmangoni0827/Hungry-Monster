@@ -86,7 +86,6 @@ function GetIngredient(Meal)
        if(data!="  " && data!=" ")
        {
         li=li+`<li><i class="fas fa-check-circle"></i> ${data}</li>`
-        console.log('if'+data);
        }
        
    })
