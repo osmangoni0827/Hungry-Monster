@@ -1,7 +1,5 @@
 
-/* main{
-    background-color:burlywood;
-} */
+
 .MealType img{
 
     height: 200px;
@@ -16,10 +14,6 @@
     background-color: lightgray;
     height: 100px;
 }
-#DisplayInformation{
-    display: none;
-    height: 800px;
-}
 .card{
     height: 350px;
     background: none;
@@ -30,7 +24,6 @@
     font-size: 25px;
     color: #363958;
 }
-
 ul li{
     list-style: none;
 }
