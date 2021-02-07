@@ -91,7 +91,6 @@ function GetIngredient(Meal)
        
    })
    ul.innerHTML=li;
-   console.log('new'+Ingredient[6]);
 }
 
                     //Get Id
