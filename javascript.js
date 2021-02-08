@@ -88,7 +88,7 @@ function GetIngredient(Meal)
         (`${Meal.strMeasure10} ${Meal.strIngredient10}`)
    ] 
    Ingredient.map(data=>{
-       if(data!="  " && data!=" ")
+       if(data!="  " && data!=" " && data!=' null')
        {
         li=li+`<li><i class="fas fa-check-circle"></i> ${data}</li>`
        }
