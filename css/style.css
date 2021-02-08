@@ -8,46 +8,56 @@ ul{
     padding-left: 0px;
     margin-left: 0px;
 }
-.MealType img{
-
+.main-body img{
     height: 200px;
-    border-radius: 10px;
 }
 .cardbackcup{
     border: none;
     background: n;
     border-radius: 10px;
 }
-.backupbody{
-    background-color: lightgray;
+/* .backupbody{
+    background-color: #E8F0FE;
+} */
+.main-body{
+    background-color: #E8F0FE;
+    border-radius: 20px;
 }
 .card{
     background: none;
     margin-bottom: 0px;
+    margin: 0 auto;
+    border-radius: 20px;
 }
 
 .cards h3{
     font-size: 25px;
     color: #363958;
+   
 }
+
 #MealType{
     margin: 0 auto;
 }
-
+#MealType a{
+    color: rgb(15, 15, 15);
+}
+#MealType a:hover{
+    text-decoration: none;
+    color: #23A9F2;
+    font-size: 20px;
+}
 #DisplayInformation{
-    width: 480px;
+   width: 400px;
     padding: 20px;
     margin: 0px auto;
-    height: 470px;
     display: none;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 #DisplayInformation img{
     height: 220px;
+    border-radius: 15px;
 }
 #DisplayInformation h1{
     color: red;
-}
-#card-body{
-    height: 500px;
 }

@@ -29,12 +29,14 @@ else{
     Meal.map(meal=>{
         NotFoundNode.style.display='none';
         const HtmlTemplet=`
-        <div class="card mt-4 col-md-3 col-sm-12" style="width: 18rem;border:none">
-        <div onclick="DisplayIntigated('${meal.strMeal}')">
+        <div class="card mt-4 col-lg-3 col-md-6 col-sm-12" style="width:18rem; border:none;">
+        <div onclick="DisplayIntigated('${meal.strMeal}')" class="main-body">
+        <a href='#display'>
             <img src="${meal.strMealThumb}" class="card-img-top" alt="${meal.strMeal} picture">
-            <div class="card-body backupbody">
+            <div class="card-body">
                 <h4 class='text-center'>${meal.strMeal}</h4>
             </div>
+        </a>
         </div>
         </div>`
         parentNode=parentNode+HtmlTemplet;
@@ -56,11 +58,11 @@ function displayInformation(meals){
     const Meal=meals.meals[0];
     document.getElementById('DisplayInformation').style.display='block';
     const HtmlTempet=`
-    <div class="card mb-5 " style="height: 520px;">
+    <div class="card" style="border:none;" id='display'>
     <img src="${Meal.strMealThumb}" class="card-img-top" alt="...">
-    <div class="card-body " >
+    <div class="card-body" style=" margin-bottom: 0px;padding-bottom: 0px;" >
       <h3 class="card-title text-center">${Meal.strMeal}</h3>
-      <h4>Ingredients</h4>
+      <h5>Ingredients</h5>
       <ul id='ulid'>
       </ul>
   </div>`
