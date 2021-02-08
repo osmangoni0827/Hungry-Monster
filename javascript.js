@@ -83,6 +83,8 @@ function GetIngredient(Meal)
         (`${Meal.strMeasure6} ${Meal.strIngredient6}`),
         (`${Meal.strMeasure7} ${Meal.strIngredient7}`),
         (`${Meal.strMeasure8} ${Meal.strIngredient8}`),
+        (`${Meal.strMeasure9} ${Meal.strIngredient9}`),
+        (`${Meal.strMeasure10} ${Meal.strIngredient10}`)
    ] 
    Ingredient.map(data=>{
        if(data!="  " && data!=" ")
