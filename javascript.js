@@ -50,7 +50,8 @@ function DisplayIntigated(mealname)
 {
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${mealname}`)
     .then(res=>res.json())
-    .then(meals=>displayInformation(meals));
+    .then(meals=>displayInformation(meals))
+    .catch(error=>console.log(error));
 }
 
                 //Display Any One Meal Information
